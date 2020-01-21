@@ -16,13 +16,16 @@
 
     
 
-    <title>Hello, world!</title>
+    <title>Aas Website</title>
   </head>
   <body>
-      <div class="container-fullwidth">
+    <!-- Navigation Bar -->
+      <div class="container-fullwidth" id="topnav">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
           <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-              <h1>Hello</h1>
+                <a class="nav-link" href="index.html">
+                  <h1> itsAaron </h1>
+                </a>
           </div>
           <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
               <ul class="navbar-nav ml-auto">
@@ -30,20 +33,44 @@
                       <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Projects</a>
+                      <a class="nav-link" href="projects.html">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
               </ul>
           </div>
       </nav>
       </div>
+      <!-- body of website - welcome message -->
+      <div class="container-fullwidth" id="hello">
+        <h1 id="hellotext">Hello</h1>
+      </div>
+
+      <div class="container" id="page"> 
+          <div class="row">
+              <div class="col-lg">
+                <p id="test">One of three columns</p>
+              </div>
+              <div class="col-lg">
+                <p> One of three columns </p>
+              </div>
+              <div class="col-lg">
+                <p> One of three columns </p>
+              </div>
+      </div>
 
       <script src="../node_modules/jquery/dist/jquery.min.js"></script>
       <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="js/index.js"></script>
+      <script src="../node_modules/scrollreveal/dist/scrollreveal.js"></script>
+
+      <script>
+        ScrollReveal().reveal('#hello', {
+          duration: 3000,
+          delay: 500
+        });
+      </script>
 
   </body>
 </html>

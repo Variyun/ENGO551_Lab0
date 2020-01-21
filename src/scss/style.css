@@ -1,13 +1,36 @@
 * {
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 body {
-  background: #c97bee;
+  background-image: url("../assets/wallpaper.jpg");
+  background-color: rgba(0, 0, 0, 0.76);
+  height: 100%;
+  opacity: 0.9;
 }
 h1 {
   color: white;
 }
 a {
   font-size: 20px;
+  text-decoration: none;
+}
+p {
+  color: white;
+  text-align: center;
+}
+#topnav {
+  height: 8%;
+}
+#hello {
+  height: 40%;
+  text-align: center;
+  padding-top: 8%;
+}
+#hellotext {
+  font-size: 200px;
+}
+#page {
+  height: 100px;
 }
