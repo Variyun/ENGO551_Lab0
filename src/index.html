@@ -13,10 +13,7 @@
 
     <!-- scss style sheet -->
     <link rel="stylesheet" href="./scss/style.css">
-
-    
-
-    <title>Aas Website</title>
+    <title>itAa</title>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -42,21 +39,29 @@
           </div>
       </nav>
       </div>
-      <!-- body of website - welcome message -->
+      <!-- "Hello " -->
       <div class="container-fullwidth" id="hello">
         <h1 id="hellotext">Hello</h1>
       </div>
-
+      <!-- "thank you " -->
+      <div class="container-fullwidth" id="welcome">
+        <h2 class="welcometext">Thank you for visiting my website!</h2>
+      </div>
+      <!-- "about me" -->
+      <div class="container-fullwidth" id="aboutme">
+        <h2 id="welcometext">Here, you can learn more about</h2>
+      </div>
+      <!-- bootstrap grid -->
       <div class="container" id="page"> 
           <div class="row">
-              <div class="col-lg">
-                <p id="test">One of three columns</p>
+              <div class="col-lg" id="who">
+                <h1 id="test">WHO I AM</h1>
               </div>
-              <div class="col-lg">
-                <p> One of three columns </p>
+              <div class="col-lg" id="like">
+                <h1>WHAT I LIKE</h1>
               </div>
-              <div class="col-lg">
-                <p> One of three columns </p>
+              <div class="col-lg" id="do">
+                <h1>WHAT I DO</h1>
               </div>
       </div>
 
@@ -69,6 +74,31 @@
         ScrollReveal().reveal('#hello', {
           duration: 3000,
           delay: 500
+        });
+
+        ScrollReveal().reveal('#welcome', {
+          duration: 3000,
+          delay: 2000
+        });
+
+        ScrollReveal().reveal('#aboutme', {
+          duration: 3000,
+          delay: 2500
+        });
+
+        ScrollReveal().reveal('#who', {
+          duration: 3000,
+          delay: 3500
+        });
+
+        ScrollReveal().reveal('#like', {
+          duration: 3000,
+          delay: 4000
+        });
+
+        ScrollReveal().reveal('#do', {
+          duration: 3000,
+          delay: 4500
         });
       </script>
 
