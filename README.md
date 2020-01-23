@@ -13,7 +13,7 @@ Project 0 - Website
 
 * /src/assets - Here you can find pictures/ wallpaper used in the website. 
 
-* /src/scss - Here you can the scss and css files that were used to style each page on the website.
+* /src/scss - Here you can find the scss and css files that were used to style each page on the website.
 
 * /src/.html - There are 4 html files here:
   * index.html - This is the homepage that users will first see.
