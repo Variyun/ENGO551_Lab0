@@ -1,8 +1,8 @@
 # ENGO551
-Engineering 551 - Advanced Geospatial Topics Winter 2020
+Engineering 551 - Advanced Geospatial Topics Winter 2020  
 Project 0 - Website 
 
-**Link to demo:** https://youtu.be/BSuHhsVNmbY
+**Link to demo:** https://youtu.be/8n3-r8TkNik
 
 ## File Explanation 
 * .gitignore - This file is used to ignore directories or files when pushing/ committing changes. In this case we are ignoring node modules that have been installed for the website. 
