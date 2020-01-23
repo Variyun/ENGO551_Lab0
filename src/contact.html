@@ -1,56 +1,104 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Google Material Icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap styling -->
-    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.css">
+  <!-- Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- scss style sheet -->
-    <link rel="stylesheet" href="./scss/style.css">
+  <!-- Bootstrap styling -->
+  <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.css">
 
-    
+  <!-- scss style sheet -->
+  <link rel="stylesheet" href="./scss/contact.css">
 
-    <title>Aas Website</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-      <div class="container-fullwidth" id="topnav">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                <a class="nav-link" href="index.html">
-                  <h1> itsAaron </h1>
-                </a>
-          </div>
-          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-          </div>
-      </nav>
+  <title>Aas Website</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="container-fullwidth" id="topnav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <a class="nav-link" href="index.html">
+          <h1> itsAaron </h1>
+        </a>
       </div>
-      
-      <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="../node_modules/scrollreveal/dist/scrollreveal.js"></script>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Fun Things</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-      <script>
+  <div class="container load-hidden" id="hello">
+    <h1 class="youcan">You can contact me at</h1>
+  </div>
 
-      </script>
+  <!-- TABLE -->
+  <div class="container load-hidden" id="contactinfo">
+    <table class=" table table-light" id="contact-table">
+      <thead>
+        <tr>
+          <th scope="col">PLATFORM</th>
+          <th scope="col">HANDLE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>email</td>
+          <td>aaron.chen1@ucalgary.ca</td>
+        </tr>
+        <tr>
+          <td>twitter</td>
+          <td>@Aaroniq1</td>
+        </tr>
+        <tr>
+          <td>instagram</td>
+          <td>@variyun</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  </body>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/scrollreveal/dist/scrollreveal.js"></script>
+
+  <script>
+    //check to see if mobile user
+    window.onload = function () {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        alert("This website wasn't designed mobile first. SORRY! Come back and visit on a monitor.")
+      }
+    }
+
+    ScrollReveal().reveal('#hello', {
+      duration: 3000,
+      delay: 300,
+      origin: 'top',
+      distance: '50px'
+    });
+
+    ScrollReveal().reveal('#contactinfo', {
+      duration: 2500,
+      delay: 600,
+    });
+  </script>
+
+</body>
+
 </html>

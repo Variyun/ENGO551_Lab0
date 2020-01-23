@@ -1,56 +1,125 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Google Material Icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap styling -->
-    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.css">
+  <!-- Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- scss style sheet -->
-    <link rel="stylesheet" href="./scss/style.css">
+  <!-- Bootstrap styling -->
+  <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.css">
 
-    
+  <!-- scss style sheet -->
+  <link rel="stylesheet" href="./scss/project.css">
 
-    <title>Aas Website</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-      <div class="container-fullwidth" id="topnav">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                <a class="nav-link" href="index.html">
-                  <h1> itsAaron </h1>
-                </a>
-          </div>
-          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-          </div>
-      </nav>
+  <title>Aas Website</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="container-fullwidth" id="topnav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <a class="nav-link" href="index.html">
+          <h1> itsAaron </h1>
+        </a>
       </div>
-      
-      <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="../node_modules/scrollreveal/dist/scrollreveal.js"></script>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Fun Things</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-      <script>
+  <section id="programming">
+    <h1 class='load-hidden' id="hello"> One thing I like to do </h1>
+    <h1 class='load-hidden' id="hello-2"> Is programming! </h1>
+    <h2 class='load-hidden' id="scroll"> (scroll down) </h2>
+  </section>
 
-      </script>
+  <section id="guitar">
+    <h1 class='load-hidden' id="hello-3"> I play the guitar! </h1>
+    <h1 class='load-hidden' id="hello-4"> Not very well though... </h1>
+    <h2 class='load-hidden' id="scroll"> (keep going) </h2>
+  </section>
 
-  </body>
+  <section id="anime">
+    <h1 class='load-hidden' id="hello-5"> I also watch a LOT of anime! </h1>
+    <h1 class='load-hidden' id="hello-6"> Full Metal Alchemist is VERY good, would reccomend </h1>
+  </section>
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/scrollreveal/dist/scrollreveal.js"></script>
+
+  <script>
+    //check to see if mobile user
+    window.onload = function () {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        alert("This website wasn't designed mobile first. SORRY! Come back and visit on a monitor.")
+      }
+    }
+    ScrollReveal().reveal('#hello', {
+      duration: 3000,
+      origin: 'top'
+    });
+
+    ScrollReveal().reveal('#hello-2', {
+      duration: 3000,
+      delay: 600,
+      origin: 'bottom',
+      distance: '50px'
+    });
+
+    ScrollReveal().reveal('#scroll', {
+      duration: 3000,
+      delay: 800,
+      origin: 'bottom',
+      distance: '50px'
+    });
+
+    ScrollReveal().reveal('#hello-3', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.8
+    });
+
+    ScrollReveal().reveal('#hello-4', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.8
+    });
+
+    ScrollReveal().reveal('#hello-5', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.8
+    });
+
+    ScrollReveal().reveal('#hello-6', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.8
+    });
+  </script>
+
+</body>
+
 </html>

@@ -1,106 +1,126 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Google Material Icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap styling -->
-    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.css">
+  <!-- Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- scss style sheet -->
-    <link rel="stylesheet" href="./scss/style.css">
-    <title>itAa</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-      <div class="container-fullwidth" id="topnav">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                <a class="nav-link" href="index.html">
-                  <h1> itsAaron </h1>
-                </a>
-          </div>
-          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-          </div>
-      </nav>
+  <!-- Bootstrap styling -->
+  <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.css">
+
+  <!-- scss style sheet -->
+  <link rel="stylesheet" href="./scss/style.css">
+  <title>itAa</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="container-fullwidth" id="topnav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <a class="nav-link" href="index.html">
+          <h1> itsAaron </h1>
+        </a>
       </div>
-      <!-- "Hello " -->
-      <div class="container-fullwidth" id="hello">
-        <h1 id="hellotext">Hello</h1>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Fun Things</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-      <!-- "thank you " -->
-      <div class="container-fullwidth" id="welcome">
-        <h2 class="welcometext">Thank you for visiting my website!</h2>
+    </nav>
+  </div>
+  <!-- "Hello " -->
+  <div class="container-fullwidth load-hidden" id="hello">
+    <h1 id="hellotext">Hello</h1>
+  </div>
+  <!-- "thank you " -->
+  <div class="container-fullwidth load-hidden" id="welcome">
+    <h2 class="welcometext">Thank you for visiting my website!</h2>
+  </div>
+  <!-- "about me" -->
+  <div class="container-fullwidth load-hidden" id="aboutme">
+    <h2 id="welcometext">Here, you can learn more about</h2>
+  </div>
+  <!-- bootstrap grid -->
+  <div class="container" id="page">
+    <div class="row">
+      <div class="col-lg load-hidden" id="who">
+        <h1 id="test">WHO I AM</h1>
       </div>
-      <!-- "about me" -->
-      <div class="container-fullwidth" id="aboutme">
-        <h2 id="welcometext">Here, you can learn more about</h2>
+      <div class="col-lg load-hidden" id="like">
+        <h1>WHAT I LIKE</h1>
       </div>
-      <!-- bootstrap grid -->
-      <div class="container" id="page"> 
-          <div class="row">
-              <div class="col-lg" id="who">
-                <h1 id="test">WHO I AM</h1>
-              </div>
-              <div class="col-lg" id="like">
-                <h1>WHAT I LIKE</h1>
-              </div>
-              <div class="col-lg" id="do">
-                <h1>WHAT I DO</h1>
-              </div>
+      <div class="col-lg load-hidden" id="do">
+        <h1>WHAT I DO</h1>
       </div>
+    </div>
 
-      <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="../node_modules/scrollreveal/dist/scrollreveal.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/scrollreveal/dist/scrollreveal.js"></script>
 
-      <script>
-        ScrollReveal().reveal('#hello', {
-          duration: 3000,
-          delay: 500
-        });
+    <script>
+      //check to see if mobile user
+      window.onload = function () {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          alert("This website wasn't designed mobile first. SORRY! Come back and visit on a monitor.")
+        }
+      }
 
-        ScrollReveal().reveal('#welcome', {
-          duration: 3000,
-          delay: 2000
-        });
+      ScrollReveal().reveal('#hello', {
+        duration: 3000,
+        delay: 500
+      });
 
-        ScrollReveal().reveal('#aboutme', {
-          duration: 3000,
-          delay: 2500
-        });
+      ScrollReveal().reveal('#welcome', {
+        duration: 3000,
+        delay: 2000,
+        origin: 'left',
+        distance: '100px'
+      });
 
-        ScrollReveal().reveal('#who', {
-          duration: 3000,
-          delay: 3500
-        });
+      ScrollReveal().reveal('#aboutme', {
+        duration: 3000,
+        delay: 2500,
+        origin: 'right',
+        distance: '100px'
+      });
 
-        ScrollReveal().reveal('#like', {
-          duration: 3000,
-          delay: 4000
-        });
+      ScrollReveal().reveal('#who', {
+        duration: 3000,
+        delay: 3500,
+        origin: 'top',
+        distance: '50px'
+      });
 
-        ScrollReveal().reveal('#do', {
-          duration: 3000,
-          delay: 4500
-        });
-      </script>
+      ScrollReveal().reveal('#like', {
+        duration: 3000,
+        delay: 4000,
+        origin: 'top',
+        distance: '50px'
+      });
 
-  </body>
+      ScrollReveal().reveal('#do', {
+        duration: 3000,
+        delay: 4500,
+        origin: 'top',
+        distance: '50px'
+      });
+    </script>
+
+</body>
+
 </html>

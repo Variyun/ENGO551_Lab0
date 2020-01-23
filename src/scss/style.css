@@ -3,19 +3,19 @@
   margin: 0;
   height: 100%;
 }
+@media only screen and (min-width: 1200px) {
+  * {
+    overflow: hidden;
+  }
+}
+html.sr .load-hidden {
+  visibility: hidden;
+}
 body {
   background-image: url("../assets/wallpaper.jpg");
   background-color: rgba(0, 0, 0, 0.76);
   height: 100%;
   opacity: 0.9;
-}
-a {
-  font-size: 20px;
-  text-decoration: none;
-}
-p {
-  color: white;
-  text-align: center;
 }
 h1 {
   color: white;
@@ -24,14 +24,28 @@ h1 {
 #topnav {
   height: 8%;
 }
+#topnav a {
+  font-size: 20px;
+  text-decoration: none;
+}
+@media only screen and (min-width: 600px) {
+  #topnav {
+    width: 100%;
+  }
+}
 #hello {
   height: 35%;
   text-align: center;
   padding-top: 5%;
   color: white;
 }
-#hellotext {
+#hello #hellotext {
   font-size: 200px;
+}
+@media only screen and (min-width: 600px) {
+  #hellotext {
+    font-size: 20px;
+  }
 }
 #welcome {
   height: 8%;
@@ -40,7 +54,7 @@ h1 {
   margin-top: 3%;
   padding-top: 10px;
 }
-.welcometext {
+#welcome .welcometext {
   font-size: 40px;
 }
 #aboutme {

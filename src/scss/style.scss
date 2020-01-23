@@ -1,25 +1,26 @@
+$primary-color:rgba(0, 0, 0, 0.76);
 
 * {
     padding: 0;
     margin: 0;
     height: 100%;
 }
+// large devices
+@media only screen and (min-width: 1200px) {
+    * {
+        overflow: hidden;
+    }
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
 
 body {
     background-image: url("../assets/wallpaper.jpg");
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: $primary-color;
     height: 100%;
     opacity: 0.9;
-}
-
-a {
-    font-size: 20px;
-    text-decoration: none;
-}
-
-p {
-    color: white;
-    text-align: center;
 }
 
 h1 {
@@ -29,7 +30,18 @@ h1 {
 
 #topnav {
     height: 8%;
-  }
+
+    a {
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #topnav {
+        width: 100%;
+    }
+}
 
 //container of text
 #hello {
@@ -37,11 +49,20 @@ h1 {
     text-align: center;
     padding-top: 5%;
     color: white;
+
+    //text
+    #hellotext {
+        font-size: 200px;
+    }
 }
-//text
-#hellotext {
-    font-size: 200px;
+
+//small screens
+@media only screen and (min-width: 600px) {
+    #hellotext {
+        font-size: 20px;
+    }
 }
+
 //welcome div
 #welcome {
     height: 8%;
@@ -49,11 +70,13 @@ h1 {
     color: white;
     margin-top: 3%;
     padding-top: 10px;
+
+    //text
+    .welcometext {
+        font-size: 40px;
+    }
 }
-//text
-.welcometext {
-    font-size: 40px;
-}
+
 //aboutme div
 #aboutme {
     height: 10%;
@@ -61,6 +84,7 @@ h1 {
     color: white;
     margin-bottom: 2%;
 }
+
 #page {
     height: 100px;
 }
