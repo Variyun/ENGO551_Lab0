@@ -5,7 +5,7 @@ Project 0 - Website
 **Link to demo:** https://youtu.be/8n3-r8TkNik
 
 ## File Explanation 
-* .gitignore - This file is used to ignore directories or files when pushing/ committing changes. In this case we are ignoring node modules that have been installed for the website. 
+* .gitignore - This file is used to ignore directories or files when pushing/ committing changes. In this case we are ignoring node modules that have been installed for the website. To install these dependencies and modules, we can use the command "npm install".
 
 * gulpfile.js - This file is used by Gulp which is a JavaScript toolkit for front-end development. In this case we are using this to compile our .scss files and for browsersync. Browsersync allows you to refresh/ reload your webpage immediately when you change your code so you don't have to refresh the page every time. 
 
